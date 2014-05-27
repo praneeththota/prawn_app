@@ -20,9 +20,11 @@ in gem file then bundle install
 step 6:
 to generate all records in pdf
 create a action in controller
+
 ex:
-def report
-end
+
+  def report
+  end
 
 step 7:
 create routes
@@ -35,8 +37,11 @@ ex:
   end
 
 step 8:
+
 create pdf file with prawn extension in the specific folder
+
 ex:
+
 report.pdf.prawn
 
 
