@@ -1,9 +1,14 @@
 == Pdf App
 Generating reports in pdf format using prawn gem
+
 clone the app then follow the steps:
+
 step 1: bundle install
+
 step 2: rake db:create #creating database
+
 step 3: rake db:migrate #migrating tables
+
 step 4: rake db:seed #for sample data
 
 step 5:
@@ -23,11 +28,11 @@ step 7:
 create routes
 ex:
 
-resources :products do
-  collection do 
-    get 'report'
+  resources :products do
+    collection do 
+      get 'report'
+    end
   end
-end
 
 step 8:
 create pdf file with prawn extension in the specific folder
