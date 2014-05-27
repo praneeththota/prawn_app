@@ -1,0 +1,40 @@
+== Pdf App
+Generating reports in pdf format using prawn gem
+clone the app then follow the steps:
+step 1: bundle install
+step 2: rake db:create #creating database
+step 3: rake db:migrate #migrating tables
+step 4: rake db:seed #for sample data
+
+step 5:
+Add 
+gem 'prawn'
+gem 'prawnto'
+in gem file then bundle install
+
+step 6:
+to generate all records in pdf
+create a action in controller
+ex:
+def report
+end
+
+step 7:
+create routes
+ex:
+
+resources :products do
+  collection do 
+    get 'report'
+  end
+end
+
+step 8:
+create pdf file with prawn extension in the specific folder
+ex:
+report.pdf.prawn
+
+
+for prawn pdf methods download the below link and enjoy with pdf methods
+http://prawnpdf.org/manual.pdf
+
